@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
+<head>
+	<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta property="og:image" content="http://telnetventures.com/images/lock-icon.png">
@@ -10,10 +12,16 @@
 	<meta property="og:description" content="Passdoor is a smart lock for your rented apartment, that opens on remote OTP. Now show homes to brokers and tenants without the hassle of physical keys">    
 
 	<title>Passdoor</title><!-- Bootstrap Core CSS-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">	
+	<link rel="stylesheet" href="css/bootstrap.css">	
 	<link rel="stylesheet" href="css/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<style>
+
+
+	</style>
+
 </head>
 
 <body>
@@ -38,11 +46,11 @@
 
 
 
-	<div class="position-relative overflow-hidden p-3 p-md-5 m-md-2 text-center bg-light" id="home">
-	  <div class="col-md-6 mx-auto mt-5">
+	<div class="position-relative overflow-hidden p-2 p-md-2 m-md-2 text-center bg-light" id="home">
+	  <div class="col-md-6 mx-auto mt-1">
 		<img src="images/lock.png" class="img-fluid"/>
-	    <h1 class="display-4 font-weight-normal">OTP Locks for Landlords</h1>
-	    <p class="lead font-weight-normal">Passdoor is a smart lock for your rented apartment, that opens on remote OTP. Now show homes to brokers and tenants without the hassle of physical keys.</p>
+	    <h1 class="font-weight-normal">OTP Locks for Landlords</h1>
+	    <p class="lead font-weight-normal">Passdoor is a smart lock for your rented apartment, that opens on remote OTP. Now let brokers and tenants see your property without the logistics of physical keys.</p>
 	    <a class="btn btn-outline-primary" href="#">Coming soon</a>
 	  </div>
 	  <div class="product-device shadow-sm d-none d-md-block"></div>
@@ -133,43 +141,44 @@
 
 		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="pricing">
 		  <h1 class="display-4">Pricing</h1>
-		  <p class="lead">To use Passdoor, you need to purchase the lock and an additional plan. Locks start from <strong>Rs 9000.</strong></p>
+		  <p class="lead">To use Passdoor, you need to purchase the Lock and an appropriate plan.</p>
 		</div>
 
 		<div class="container">
 		  <div class="card-deck mb-3 text-center">
 		    <div class="card mb-4 shadow-sm">
 		      <div class="card-header">
-		        <h4 class="my-0 font-weight-normal">Listed Apartment</h4>
-		        <small class="text-muted">The apartment is being shown to customers</small>
+		        <h4 class="my-0 font-weight-normal">Plan 1 : Occupied</h4>
+		        <small class="text-muted">Property is not in the market</small>
 		      </div>
 		      <div class="card-body">
-		        <h1 class="card-title pricing-card-title"><s>Rs. 1500</s> Free<small class="text-muted">/3 mths</small></h1>
+		        <h1 class="card-title pricing-card-title">Zero <small class="text-muted"> / mth</small> </h1><h5 class="text-muted">+ Rs 8999 for Lock (one-time)</h5>
 		        <ul class="list-unstyled mt-3 mb-4">
-		          <li>Mobile app to create codes</li>
-		          <li>50 codes per month can be created</li>
-		          <li>Priority email support</li>
+		          <li>Resident(s) can use Mobile app to open door</li>
+		          <li>Long-term codes for family members</li>
+		          <li>Cannot create one-time codes</li>
 		          <li>Help center access</li>
 		        </ul>
-		        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+		        <button type="button" class="btn btn-lg btn-block btn-primary">Select</button>
 		      </div>
 		    </div>
 		    <div class="card mb-4 shadow-sm">
 		      <div class="card-header">
-		        <h4 class="my-0 font-weight-normal">Rented Apartment</h4>
-		        <small class="text-muted">The property is already on lease</small>
+		        <h4 class="my-0 font-weight-normal">Plan 2 : Vacant</h4>
+		        <small class="text-muted">Property is being shown to customers</small>
 		      </div>
 		      <div class="card-body">
-		        <h1 class="card-title pricing-card-title">Rs 1200 <small class="text-muted">/year</small></h1>
+		        <h1 class="card-title pricing-card-title">Rs 1500 <small class="text-muted"> / 3 mths</small> </h1><h5 class="text-muted">+ Rs 8999 for Lock (one-time)</h5>
 		        <ul class="list-unstyled mt-3 mb-4">
-		          <li>Tenant can use Mobile app to enter</li>
-		          <li>Tenant can create keys for guests, help</li>
-		          <li>Phone and email support</li>
+		          <li>Mobile app to create one-time codes</li>
+		          <li>50 OTP codes per month</li>
+		          <li>Priority support</li>
 		          <li>Help center access</li>
 		        </ul>
-		        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Contact us</button>
+		        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Select</button>
 		      </div>
 		    </div>
+
 		  </div>
 
 
@@ -177,12 +186,12 @@
 		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="story">
 		  <div class="col-md-9 p-lg-9 mx-auto">
 			<h3 class="display-4">Our Story</h3>        
-				<p class="font-weight-light text-left">
-				Our founders have been renting a couple of apartments in Mumbai for the past 8 years. Every time the apartment gets vacant, they list it up on 99acres.com and Magicbricks.com. <br><br>
-				When a broker wants to show the apartment to his customer, he needs the keys. <span class="font-italic">Chabhi kahan hai?</span> Well, the keys are at home or the office. So, he sends his boy to collect the keys, shows the apartment to his customer and then returns the keys. You know how many times this process repeats before a party likes the apartment and the lease is signed.<br><br>
-				Once the tenant moves in, what about the old lock? Now, call us suspicious, but with dozens of brokers and their boys having handled the keys, its not too comforting and we dont want an incident. So they change the cylinder and the keys.<br><br>
-				Every couple of years they realized that this process repeats and there is endless logistics involved in showing apartments. There had to be a better solution in today's day and age! So they worked on a electronic lock that lets landlords create OTP codes remotely and share them with the broker so he can get into the apartment. These are single use codes. You can be in another city and create codes using the mobile app. The lock surely doesn't need any Internet or wifi.
-				</p>
+				<div class="font-weight-light text-left blockquote">
+				We have been renting a couple of apartments in Mumbai for the past 8 years. Every time the apartment gets vacant, we list it up on 99acres.com and Magicbricks.com. <br><br>
+				When a broker wants to show the apartment to his customer, he needs the keys. <span class="font-italic">Chabhi kahan par hai?</span> The keys are with us or a friend's place. So, he sends his boy to collect the keys, shows the apartment to his customer and then returns the keys. You know how many times this process repeats before a party likes the apartment and the lease is signed.<br><br>
+				Once the tenant moves in, what about the old lock? Now, call us suspicious, but with dozens of brokers and their boys having handled the keys, its not too comforting and we dont want an incident. So we change the cylinder and the keys.<br><br>
+				Every time the apartment is vacated, this process repeats itself. We realized that there had to be a better solution in today's day and age! So we worked on an electronic lock that lets landlords like you and us create OTP codes remotely and share them with the broker so he can get into the apartment. These are single use codes. Once the broker has used it, the code won't work again. And best thing is, you can create the code from wherever you are.
+				</div>
 			</div>
 		</div>
 
@@ -190,7 +199,7 @@
 		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="pricing">
 		  <div class="col-md-9 p-lg-9 mx-auto">
 			<h1 class="display-4">Cities</h1>        
-				<p class="font-weight-light">We are accepting limited landlords from Mumbai and Bangalore in our first phase.<br><br>Please provide your details and we will contact you.</p>
+				<p class="font-weight-light">We are currently accepting landlords from Mumbai and Bangalore.<br><br>Please provide your details and we will contact you.</p>
 			</div>
 		</div>
 
