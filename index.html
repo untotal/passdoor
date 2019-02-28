@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135374481-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-135374481-1');
+	</script>
+
+
 	<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
 	<meta name="description" content="">
@@ -34,10 +45,10 @@
 		<div class="collapse navbar-collapse" id="navigationLinks">
 
 			<ul class="nav navbar-nav">
-				<li><a class="nav-link active" href="#home">Home</a></li>      
-				<li><a class="nav-link" href="#features">Features</a></li>      
-				<li><a class="nav-link" href="#pricing">Pricing</a></li>      
-				<li><a class="nav-link" href="#story">Our Story</a></li>
+				<li><a class="nav-link active" href="#home" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#home','value': ''});">Home</a></li>      
+				<li><a class="nav-link" href="#features" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#features','value': ''});">Features</a></li>      
+				<li><a class="nav-link" href="#pricing" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#pricing','value': ''});">Pricing</a></li>      
+				<li><a class="nav-link" href="#story" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#story','value': ''});">Our Story</a></li>
 			</ul>
 		</div>
 	</div>
@@ -50,8 +61,8 @@
 	  <div class="col-md-6 mx-auto mt-1">
 		<img src="images/lock.png" class="img-fluid"/>
 	    <h1 class="display-4 font-weight-normal">OTP Locks for Landlords</h1>
-	    <p class="lead font-weight-normal">Passdoor is a smart lock for your rented apartment, and opens with an OTP. Let brokers and tenants see your property without the logistics of physical keys.</p>
-	    <!-- <a class="btn btn-outline-primary" href="#">Coming soon</a> -->
+	    <p class="lead font-weight-normal">Passdoor is a smart lock for your rented apartment, that also opens with an OTP. Now brokers and tenants can see your property without the logistics of physical keys.</p>
+	    <a class="btn btn-outline-primary" data-toggle="modal" data-target="#registerModal" data-referer="register-form" href="#"  onClick="gtag('event', 'clicked', {'category': 'button','label': 'send me more details..','value': ''});">Send me more details..</a>
 	  </div>
 	  <div class="product-device shadow-sm d-none d-md-block"></div>
 	  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -137,7 +148,7 @@
 			 </div>
 			</div>
 			</div>
-
+<!--
 
 		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center" id="pricing">
 		  <h1 class="display-4">Pricing</h1>
@@ -184,7 +195,7 @@
 		   </div>
 		  </div>
 		</div>  
-
+-->
 
 		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center" id="story">
 		  <div class="col-md-9 p-lg-9 mx-auto">
@@ -203,9 +214,12 @@
 		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center" id="contact">
 		  <div class="col-md-9 p-lg-9 mx-auto">
 			<h1 class="display-4">Cities</h1>        
-				<p class="font-weight-light">We are currently accepting landlords from Mumbai and Bangalore.<br><br>Please provide your details and we will contact you.</p>
-			</div>
-			<button class="btn btn-lg btn-primary btn-bd-primary w-md-25 w-xs-50 mb-3" data-toggle="modal" data-target="#registerModal" data-referer="register-form">Register</button>
+				<div class="font-weight-light mb-4">We are currently accepting landlords from Mumbai and Bangalore.<br><br>Please provide your details and we will contact you.
+				</div>
+				<div>
+					<button class="btn btn-md btn-outline-primary w-md-25 w-xs-50 mb-3" data-toggle="modal" data-target="#registerModal" data-referer="register-form" onClick="gtag('event', 'clicked', {'category': 'button','label': 'Register','value': ''});">Register</button>
+				</div>
+		  </div>	
 		</div>
 
 
@@ -235,12 +249,12 @@
 
 		          <div class="form-group">
 		            <label for="user-phone" class="col-form-label" >Phone number</label>
-		            <input type="tel" class="form-control" id="user-phone" placeholder="9820098200" required pattern="\d{10}">
+		            <input type="tel" class="form-control" id="user-phone" placeholder="" required pattern="\d{10}">
 					<div class="invalid-feedback">
 			        Please provide a valid phone number.
 			        </div>
 				</div>
-
+<!--
 		          <div class="form-group">
 		            <label for="user-email" class="col-form-label">Email address</label>
 		            <input type="email" class="form-control" id="user-email">
@@ -256,6 +270,7 @@
 			        Please provide a valid city.
 			        </div>
 				</div>
+-->
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
