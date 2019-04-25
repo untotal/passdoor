@@ -22,7 +22,7 @@
 	<meta property="og:title" content="Smart Digital Locks">
 	<meta property="og:description" content="MyLock is a smart lock for Shared Apartments, Hotels and Rented Apartments.">    
 
-	<title>MyLock - Smart Digital Lock</title><!-- Bootstrap Core CSS-->
+	<title>Passdoor - Smart Digital Access</title><!-- Bootstrap Core CSS-->
 	<link rel="stylesheet" href="css/main.css">	
 	<link rel="stylesheet" href="css/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -40,18 +40,18 @@
 	<div class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
 		<a class="navbar-brand" href="/">
 			<img src="images/lock-icon.png" style="width:24px;" class="img-fluid"/>
-			<span class="d-inline-block ml-0">MyLock</span></a>
-			<button class="navbar-toggler" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<span class="d-inline-block ml-0">Passdoor</span></a>
 		<div class="collapse navbar-collapse" id="navigationLinks">
 
+<!--
 			<ul class="nav navbar-nav">
 				<li><a class="nav-link active" href="#home" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#home','value': ''});">Home</a></li>      
 				<li><a class="nav-link" href="#features" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#features','value': ''});">Features</a></li>
-				<!--      
-				<li><a class="nav-link" href="#pricing" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#pricing','value': ''});">Pricing</a></li>  
-				-->    
+				<li><a class="nav-link" href="#pricing" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#pricing','value': ''});">Pricing</a></li>  		
 				<li><a class="nav-link" href="#story" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#story','value': ''});">Our Story</a></li>
 			</ul>
+-->
+
 		</div>
 	</div>
 
@@ -62,8 +62,8 @@
 	<div class="position-relative overflow-hidden p-2 p-md-2 m-md-2 text-center" id="home">	
 	  <div class="col-md-6 mx-auto mt-1">
 		<img src="images/lock.png" class="img-fluid"/>
-	    <h1 class="display-4 font-weight-normal">Smart Digital Locks</h1>
-	    <p class="lead font-weight-normal">Use your Mobile Phone to open your door.</p>
+	    <h1 class="display-4 font-weight-normal">Smart Digital Access</h1>
+	    <p class="lead font-weight-normal">Get rid of the physical key. Use your Mobile Phone or code to open the door. Control last mile access from HQ. Built for the shared economy.</p>
 	    <a class="btn btn-outline-primary" data-toggle="modal" data-target="#registerModal" data-referer="register-form" href="#"  onClick="gtag('event', 'clicked', {'category': 'button','label': 'send me more details..','value': ''});">Send me more details..</a>
 	  </div>
 	  <div class="product-device shadow-sm d-none d-md-block"></div>
@@ -72,267 +72,59 @@
 	</div>
 
 
-
-<!--
-
-	<main class="bd-masthead" id="content" role="main">
-		<div class="container">
-				<div class="row align-items-center">
-					<div class="col-6 mx-auto col-md-6 order-md-2 text-center">
-						<img src="images/lock.png" class="img-fluid"/>
-					</div>      
-			<div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-				<h1 class="mb-3 bd-text-purple-bright">OTP Lock for Landlords</h1>        
-				<p class="lead">
-					Passdoor is a smart lock for your rented apartment, that opens on remote OTP. Now show homes to brokers and tenants without the hassle of physical keys.
-					<br><br>
-					The locks are sturdy, easy to fit on regular doors and do not need any Internet connectivity.
-				</p>        
-
-				<div class="row">
-						<a class="btn btn-lg btn-primary btn-bd-primary w-50 mb-3" href="/templates"">Sign-up</a>
-				</div>
-
-
+	<!--contact form/ shown modal -->
+	<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalForm" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	     <form class="needs-validation">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="registerModalForm">Please provide your details</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	          <div class="form-group">
+	            <label for="user-name" class="col-form-label">Name</label>
+	            <input type="text" class="form-control" id="user-name" required>
+				<div class="invalid-feedback">
+		        	Please provide a valid name.
+		        </div>
 			</div>
-		</div>
--->
 
-
-
-
-		<div class="container text-center" id="features" style="margin-top:250px;">
-			<h1 class="display-5">Features</h1><p></p>
-
-  <div class="row mt-5">
-    <div class="col-12">
-      <div class="nav justify-content-center nav-justified" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
-        <a class="nav-item nav-link active" id="feature1-tab" data-toggle="pill" href="#feature1" role="tab" aria-controls="feature1" aria-selected="false">Open with Phone</a>
-        <a class="nav-item nav-link" id="feature2-tab" data-toggle="pill" href="#feature2" role="tab" aria-controls="feature2" aria-selected="false">Open with Keycode</a>
-        <a class="nav-item nav-link" id="feature3-tab" data-toggle="pill" href="#feature3" role="tab" aria-controls="feature3" aria-selected="true">Share OTP Key</a>
-
-<!--
-        <a class="nav-link" id="feature4-tab" data-toggle="pill" href="#feature4" role="tab" aria-controls="feature4" aria-selected="false">Notifications</a>
-        <a class="nav-link" id="feature5-tab" data-toggle="pill" href="#feature5" role="tab" aria-controls="feature5" aria-selected="false">User Management</a>
-        <a class="nav-link" id="feature6-tab" data-toggle="pill" href="#feature6" role="tab" aria-controls="feature6" aria-selected="false">Physical Key</a>
-        <a class="nav-link" id="feature7-tab" data-toggle="pill" href="#feature7" role="tab" aria-controls="feature7" aria-selected="false">Connectivity</a>
- -->       
-      </div>
-    </div>
-   </div>
-
-  <div class="row mt-5" style="min-height:600px">
-    <div class="col-12 text-center">
-      <div class="tab-content" id="">
-        <div class="tab-pane fade active show" id="feature1" role="tabpanel" aria-labelledby="feature1-tab">
-				<img src = "images/mylock-unlock-screen.png" class="img-responsive shadow-lg" style="max-height:500px;max-width:400px;">
-	            <div class="card-body">
-	              <p class="card-text">Use the MyLock Mobile app on your Phone to open your lock. Available for iPhone and Android handsets.</p>
-	            </div>
-        </div>
-        <div class="tab-pane fade" id="feature2" role="tabpanel" aria-labelledby="feature2-tab">
-          	    <img src = "images/mylock-code-generate.png" class="img-responsive shadow-lg" style="max-height:300px;max-width:400px;">
-	            <div class="card-body">
-	              <p class="card-text">Create key codes to access</p>
-	            </div>
-        </div>
-        <div class="tab-pane fade" id="feature3" role="tabpanel" aria-labelledby="feature3-tab">
-	            <img src = "images/mylock-key-notification.png" class="img-responsive shadow-lg" style="max-height:300px;max-width:400px;">
-	            <div class="card-body">
-	              <p class="card-text">Share one-time (OTP) keys with guests and friends</p>
-	            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-
-
-
-
-<!--
-				<div class="col-12 col-md-4 p-3 p-md-3 bg-light border border-white">
-					<h5>Phone is the Key</h5>    
-					<p class="font-weight-light">
-						Use the MyLock Mobile app on your Phone to open your lock.
-					</p>    
-				</div>
-				<div class="col-12 col-md-4 p-3 p-md-3 bg-light border border-white">
-					<h5>Electronic Codes</h5>    
-					<p class="font-weight-light">
-						A user who does not have a mobile phone can still open the lock using a numeric key.
-					</p>    
-				</div>
-				<div class="col-12 col-md-4 p-3 p-md-3 bg-light border border-white">
-					<h5>Attribution</h5>    
-					<p class="font-weight-light">
-						You know when your house has been opened. Choose to get notifications.
-					</p>    
-				</div>
-				<div class="col-12 col-md-4 p-3 p-md-3 bg-light border border-white">
-					<h5>Manage Users</h5>    
-					<p class="font-weight-light">
-						Create access for multiple members in your family. Adults having phones can use the app. Children and elderly can use separate codes.
-					</p>    
-				</div>
-				<div class="col-12 col-md-4 p-3 p-md-3 bg-light border border-white">
-					<h5>No Connectivity needed</h5>    
-					<p class="font-weight-light">
-						MyLock does not require any Internet or connectivity to operate. 
-					</p>    
-				</div>
-				<div class="col-12 col-md-4 p-3 p-md-3 bg-light border border-white">
-					<h5>Restrict Keys</h5>    
-					<p class="font-weight-light">
-						Restrict entry of a specific user whenever you want.
-					</p>    
-				</div>
-				<div class="col-12 col-md-4 p-2 p-md-2 bg-light border border-white">
-					<h5>Use physical keys</h5>    
-					<p class="font-weight-light">
-						You can still use the physical key to open MyLock.
-					</p>    
-				</div>
--->				
-<!--
-
-		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center" id="pricing">
-		  <h1 class="display-4">Pricing</h1>
-		  <p class="lead">To use Passdoor you need to purchase the Lock and an appropriate plan.</p>
-
-		<div class="container">
-		  <div class="card-deck mb-3 text-center">
-		    <div class="card mb-4 shadow-sm">
-		      <div class="card-header bg-dark text-light">
-		        <h4 class="my-0 font-weight-normal">Plan 1 : Occupied Property</h4>
-		        <small class="">Property is not in the market</small>
-		      </div>
-		      <div class="card-body">
-		        <h1 class="card-title pricing-card-title">Free <small class="text-muted"></small> </h1><h5 class="text-muted">+ Rs 8999 for Lock (one-time)</h5>
-		        <ul class="list-unstyled mt-3 mb-4">
-		          <li>Resident(s) can use Mobile app to open door</li>
-		          <li>Long-term codes for family members</li>
-		          <li>Cannot create one-time codes</li>
-		          <li>Help center access</li>
-		        </ul>
-		        <button type="button" class="btn btn-lg btn-block btn-primary"  data-toggle="modal" data-target="#registerModal" data-referer="pricing-plan-a">Get Started</button>
-		      </div>
-		    </div>
-		    <div class="card mb-4 shadow-sm">
-		      <div class="card-header bg-dark text-light">
-		        <h4 class="my-0 font-weight-normal">Plan 2 : Property to Lease</h4>
-		        <small class="">Property is being shown to customers</small>
-		      </div>
-		      <div class="card-body">
-		        <h1 class="card-title pricing-card-title">Rs 1500<small class="text-muted"> for 3 mths</small> </h1><h5 class="text-muted">+ Rs 8999 for Lock (one-time)</h5>
-		        <ul class="list-unstyled mt-3 mb-4">
-		          <li>Mobile app to create one-time codes</li>
-		          <li>50 OTP codes per month</li>
-		          <li>Priority support</li>
-		          <li>Help center access</li>
-		        </ul>
-		        <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#registerModal" data-referer="pricing-plan-b">Get Started</button>
-		      </div>
-		    </div>
-		   </div> 
-
-		   <div class="">
-		   	<p class="lead">In the regular course, you would just buy the lock and use the free plan. When your property gets vacant and you are showing it to brokers and customers, you would purchase the second plan for a limited time.</p>
-		   </div>
-		  </div>
-		</div>  
--->
-
-		<div class="container text-center" id="story" style="margin-top:100px;">
-		  <div class="col-md-9 p-lg-9 mx-auto">
-			<h3 class="display-5">Our Story</h3>        
-				<div class="font-weight-light text-left blockquote">
-				It's 2019. You are walking around with a Smartphone in your pocket, accessing the web and watching Netflix. 
-				But when you come back home, you are still fiddling in your pockets to find the keys! 
-				<br><br>
-				There has to be a better way. Your phone should be able to open the door.
-				<br><br>
-				We worked on this for a year and have come up with MyLock - a Secure, Mobile Locking system that belongs to the present.
-				Now use your phone to open the door. Don't have your phone? Use a code to open. Manage kids, elderly parents and guests.
-				<br><br>
-				Our locks start from Rs 13,999.
-				</div>
+	          <div class="form-group">
+	            <label for="user-phone" class="col-form-label" >Phone number</label>
+	            <input type="tel" class="form-control" id="user-phone" placeholder="" required pattern="\d{10}">
+				<div class="invalid-feedback">
+		        Please provide a valid phone number.
+		        </div>
 			</div>
-		</div>
 
-
-		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style="margin-top:250px;" id="contact">
-		  <div class="col-md-9 p-lg-9 mx-auto">
-			<h1 class="display-5">Sales</h1>        
-				<div class="font-weight-light mb-4">We are currently accepting customers in Mumbai and Bangalore.<br><br>Please provide your details and we will contact you.
-				</div>
-				<div>
-					<button class="btn btn-md btn-outline-primary w-md-25 w-xs-50 mb-3" data-toggle="modal" data-target="#registerModal" data-referer="register-form" onClick="gtag('event', 'clicked', {'category': 'button','label': 'Register','value': ''});">Register</button>
-				</div>
-		  </div>	
-		</div>
-
-
-		<footer class="bd-footer text-muted mt-5" style="margin-top:400px;"><div class="container-fluid p-3 p-md-5 text-center"><p>Designed and built with <i class="fa fa-heart fa-x" aria-hidden="true" style="color:red;"></i> in Bangalore.</p> <a href = "/privacy">Privacy Policy</a><p></p></div></footer>
-
-
-		<!--contact form/ shown modal -->
-
-		<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalForm" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		     <form class="needs-validation">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="registerModalForm">Register</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		      </div>
-		      <div class="modal-body">
-		          <div class="form-group">
-		            <label for="user-name" class="col-form-label">Name</label>
-		            <input type="text" class="form-control" id="user-name" required>
-					<div class="invalid-feedback">
-			        	Please provide a valid name.
-			        </div>
-				</div>
-
-		          <div class="form-group">
-		            <label for="user-phone" class="col-form-label" >Phone number</label>
-		            <input type="tel" class="form-control" id="user-phone" placeholder="" required pattern="\d{10}">
-					<div class="invalid-feedback">
-			        Please provide a valid phone number.
-			        </div>
-				</div>
+	          <div class="form-group">
+	            <label for="user-email" class="col-form-label">Email address</label>
+	            <input type="email" class="form-control" id="user-email">
+				<div class="invalid-feedback">
+		        Please provide a valid email address.
+		        </div>
+			</div>
 <!--
-		          <div class="form-group">
-		            <label for="user-email" class="col-form-label">Email address</label>
-		            <input type="email" class="form-control" id="user-email">
-					<div class="invalid-feedback">
-			        Please provide a valid email address.
-			        </div>
-				</div>
-
-		          <div class="form-group">
-		            <label for="user-city" class="col-form-label">City</label>
-		            <input type="text" class="form-control" id="user-city" required>
-					<div class="invalid-feedback">
-			        Please provide a valid city.
-			        </div>
-				</div>
--->
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		        <button type="submit" class="btn btn-primary">Submit</button>
-		      </div>
-		      </form>
-		    </div>
-		  </div>
-		</div>
+	          <div class="form-group">
+	            <label for="user-city" class="col-form-label">City</label>
+	            <input type="text" class="form-control" id="user-city" required>
+				<div class="invalid-feedback">
+		        Please provide a valid city.
+		        </div>
+			</div>
+-->			
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="submit" class="btn btn-primary">Submit</button>
+	      </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
 
 
 	<script>
