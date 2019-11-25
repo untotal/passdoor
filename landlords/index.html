@@ -38,18 +38,16 @@
 <body>
 
 	<div class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
-		<a class="navbar-brand" href="/passdoor">
+		<a class="navbar-brand" href="/">
 			<img src="../images/lock-icon.png" style="width:48px;" class="img-fluid"/>
 			<span class="d-inline-block ml-2">Passdoor</span></a>
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 		<div class="collapse navbar-collapse" id="navigationLinks">
 
 			<ul class="nav navbar-nav">
-				<li><a class="nav-link active" href="#home" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#home','value': ''});">Home</a></li>      
-				<li><a class="nav-link" href="#features" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#features','value': ''});">Features</a></li>      
-				<li><a class="nav-link" href="#pricing" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#pricing','value': ''});">Pricing</a></li>      
-				<li><a class="nav-link" href="#story" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#story','value': ''});">Our Story</a></li>
-			</ul>
+					<li><a class="nav-link" href="/" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#home','value': ''});">Shared Economy</a></li>      
+					<li><a class="nav-link active" href="#" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#features','value': ''});">Landlords</a></li>
+				</ul>
 		</div>
 	</div>
 
@@ -60,8 +58,10 @@
 	<div class="position-relative overflow-hidden p-2 p-md-2 m-md-2 text-center" id="home">	
 	  <div class="col-md-6 mx-auto mt-1">
 		<img src="../images/lock.png" class="img-fluid"/>
-	    <h1 class="display-4 font-weight-normal">OTP Locks for Landlords</h1>
-	    <p class="lead font-weight-normal">Passdoor is a smart lock for your rented apartment, that also opens with an OTP. Now brokers and tenants can see your property without the logistics of physical keys.</p>
+		<img src="../images/iphone-with-open-screen.png" class="img-fluid d-none d-xl-block float-right" style="height:400px;"/>
+
+		<h1 class="display-4 font-weight-normal">OTP Locks for Landlords</h1>
+	    <p class="lead font-weight-normal">Passdoor is a smart lock for your rented apartment, that also opens with a remote OTP. Now brokers and tenants can see your property without the logistics of physical keys.</p>
 	    <a class="btn btn-outline-primary" data-toggle="modal" data-target="#registerModal" data-referer="register-form" href="#"  onClick="gtag('event', 'clicked', {'category': 'button','label': 'send me more details..','value': ''});">Send me more details..</a>
 	  </div>
 	  <div class="product-device shadow-sm d-none d-md-block"></div>
