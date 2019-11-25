@@ -37,11 +37,17 @@
 
 <body>
 
-	<div class="navbar navbar-expand navbar-light bg-light">
+	<div class="navbar navbar-expand-sm navbar-light bg-light">
+
 		<a class="navbar-brand" href="/">
 			<img src="images/lock-icon.png" style="width:24px;" class="img-fluid"/>
 			<span class="d-inline-block ml-0">Passdoor</span></a>
-		<div class="collapse navbar-collapse" id="navigationLinks">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			</button>
+	  
+			<div class="collapse navbar-collapse" id="navigationLinks">
 
 			<ul class="nav navbar-nav">
 				<li><a class="nav-link active" href="#" onClick="gtag('event', 'clicked', {'category': 'menu','label': '#home','value': ''});">Shared Economy</a></li>      
